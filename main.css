@@ -1,0 +1,255 @@
+/* reset css: all padding and margin reset to 0 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #424b23;
+    font-size: 100%; /* 16px = 100% = 1em */
+    
+    /* background-image: url(../images/45degreee_fabric.webp); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    /* font-family: "Amatic SC", sans-serif; */
+    font-family: "Alexandria", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-size: 2.25em; /* 36px / 16px = 2.25em OR 225% */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 2.125em; /* 34px / 16px = 2.125em */
+    margin-bottom: 8px;
+}
+
+h3{
+    font-size: 2em; /* 32px / 16px = 2em */
+}
+
+p{
+    margin-bottom: 8px;
+    margin-right: 90px;
+}
+
+/* make images responsive */
+img{
+    max-width: auto;
+}
+
+.container{
+    /* background-color: #ffffff; */
+    /* width: 1200px; */
+    /* width: 90%; */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+header{
+    /* background-color: cadetblue; */
+    flex: 1 0 100%;
+    height: 200px;
+}
+
+nav{
+    /* background-color: #2D6EE6; */
+    flex: 1 0 100%;
+    
+
+}
+
+ul{
+    /* background-color: aliceblue; */
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+
+li{
+    margin-left: 10px;
+    
+}
+
+/* initial state of button */
+a:link{
+    display: block;
+    /* width: 150px;
+    text-align: center; */ 
+    /* background-color: aqua; */
+    padding: 10px 10px;
+    color: #424b23;
+    text-decoration: none;
+    border-radius: 5px;
+    /* border-top-left-radius: 5px; */
+}
+
+/* links that have been clicked */
+a:visited{
+    /* color:brown; */
+    color: #424b23
+}
+
+/* rollover state */
+a:hover{
+    /* color:coral;
+    background-color:darkmagenta; */
+    text-decoration: underline;
+    color: #ee7ba2
+}
+
+/* when clicked */
+a:active{
+    /* background-color:crimson; */
+    color: #ee7ba2
+}
+
+
+main{
+    /* background-color:burlywood; */
+    /* width: 800px; */
+    flex: 1 0 70%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside{
+    background-color: #f7bed1;
+    /* width: 400px; */
+    flex: 1 0 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* margin-top: 850px; */
+    
+}
+
+footer{
+    background-color: #ee7ba2;
+    flex: 1 0 100%;
+    margin-top: 100px;
+    
+}
+ .contact-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  } 
+  
+   .contact-details {
+    text-align: center;
+    margin-bottom: 30px;
+  } 
+  
+  .contact-details h1 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-details p {
+    margin: 5px 0;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ee7ba2;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    background: #ee7ba2;
+    color: #424b23;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-form button:hover {
+    background: #f7bed1;
+  }
+
+/* tablet: if viewport or screen is 800px or less...*/
+@media screen and (max-width: 800px){
+
+    /* body{
+        background-color: yellowgreen;
+    } */
+
+    header{
+        height: 100px;
+    }
+
+    a:link{
+       
+        padding: 10px 20px;
+      
+    }
+
+    main{
+        flex: 1 0 60%;
+    }
+
+    aside{
+        flex: 1 0 40%;
+    }
+
+}
+
+/* mobile: - if viewport or screen is 600px or less...*/
+@media screen and (max-width: 600px){
+    header{
+        height: 50px;
+    }
+
+    /* #nav{
+        display: none;
+    } */
+
+    ul{
+        display: block;
+        text-align: center;
+    }
+
+    main{
+        flex: 1 0 100%;
+    }
+
+    /* #sidebar1{
+        display: none;
+    } */
+
+
+
+
+}
